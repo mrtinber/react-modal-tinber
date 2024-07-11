@@ -2,14 +2,24 @@
   "name": "react-modal-tinber",
   "version": "1.0.0",
   "description": "This is a modal component for React + TS",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
+    "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Kevin Bertin",
   "license": "MIT",
+  "files": [
+    "dist"
+  ],
   "dependencies": {
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "typescript": "^5.5.3"
   }
 }

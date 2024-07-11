@@ -13,12 +13,12 @@ type ModalProps = {
 
 // *Note: the "modal-wrapper" class is actually used to define a backdrop if needed*
 export const Modal = ({ open, onClose, message, containerClassName, messageClassName, closeButtonClassName, closeButtonLabel, children }: ModalProps) => {
-    
+
     // This is to avoid closing the modal when clicking on the actual message, and only doing so when clicking on the backdrop
     const handleContainerClick = (event: React.MouseEvent<HTMLDivElement>) => {
         event.stopPropagation();
     };
-    
+
     return (
         <>
             <dialog className='modal__wrapper' open={open} onClick={onClose}>
