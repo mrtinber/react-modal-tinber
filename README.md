@@ -1,4 +1,5 @@
 # React Modal Tinber
+<a id="readme-top"></a>
 
 ## Description
 
@@ -20,7 +21,7 @@ yarn add react-modal-tinber
 
 ## Props
 
-```javascript
+```ts
 open: boolean,     // If 'true', the modal is open, if 'false', the modal is closed
 onClose: () => void,      // Allowing you to customize the function called on closing
 message?: string,      // *Optional* : To customize the message of the modal if needed
@@ -31,13 +32,45 @@ closeButtonLabel: string | ReactNode,     // Allowing you to customize the close
 children?: ReactNode,     // *Optional* : Allowing you to add children nodes if needed
 ```
 
-## License
+## Usage
 
-[MIT](https://choosealicense.com/licenses/mit/)
+Here is a basic example of how to use the component
+
+```tsx
+import React, { useState } from 'react';
+import { Modal } from 'react-modal-tinber';
+
+const App = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleOpen = () => {
+    setIsOpen(true);
+  };
+
+  const handleClose = () => {
+    setIsOpen(false);
+  };
+
+  return (
+    <div>
+      <h1>My Application</h1>
+      <button onClick={handleOpen}>Open Modal</button>
+      <Modal
+        open={isOpen}
+        onClose={handleClose}
+        message="This is a modal"
+        closeButtonLabel="Close"
+      />
+    </div>
+  );
+};
+
+export default App;
+```
 
 ## Author
 
-Kevin Bertin
+Kevin Bertin [GitHub](https://github.com/mrtinber)
 
 ## Contributing
 
@@ -47,5 +80,7 @@ to discuss what you would like to change.
 Please make sure to update tests as appropriate.
 
 Project Link: [https://github.com/mrtinber/react-modal-tinber](https://github.com/mrtinber/react-modal-tinber)
+
+[![MIT License][license-shield]][license-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
