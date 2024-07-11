@@ -1,5 +1,6 @@
-# React Modal Tinber
 <a id="readme-top"></a>
+
+# React Modal Tinber
 
 ## Description
 
@@ -34,7 +35,7 @@ children?: ReactNode,     // *Optional* : Allowing you to add children nodes if 
 
 ## Usage
 
-Here is a basic example of how to use the component
+Here is a basic example of how to use the component:
 
 ```tsx
 import React, { useState } from 'react';
@@ -70,7 +71,8 @@ export default App;
 
 ## Author
 
-Kevin Bertin [GitHub](https://github.com/mrtinber)
+Kevin Bertin 
+- [GitHub](https://github.com/mrtinber)
 
 ## Contributing
 
@@ -79,8 +81,13 @@ to discuss what you would like to change.
 
 Please make sure to update tests as appropriate.
 
-Project Link: [https://github.com/mrtinber/react-modal-tinber](https://github.com/mrtinber/react-modal-tinber)
+GitHub Repository Link: [https://github.com/mrtinber/react-modal-tinber](https://github.com/mrtinber/react-modal-tinber)
+
+## License
 
 [![MIT License][license-shield]][license-url]
+
+[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
+[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
